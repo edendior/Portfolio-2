@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Fullscreen Fishtank -->
+    <section id="Home" class="hero">
+        <div id="videoWrapper">
+            <video autoplay muted loop id="Fish_tank">
+                <source src="fishies.mp4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="Video_Text">
+            <h1>Eden's Portfolio</h1>
+            <div class="tagline">Creative Developer & UX/UI Designer</div>
+          </div>
+
+        <div class="content">
+            <h1></h1>
+            <div class="animation"></div>
+        </div>
+
+        <div id="tapPrompt">tap the tank?</div>
+        <div id="popupMessage">pls don't disturb the fish</div>
+        <div id="tapOverlay"></div>
+        <div class="scroll-down">↓ Scroll to learn more</div>
+
+    </section>
+
+<!-- About Section -->
+<section id="about" class="section-dark">
+    <div class="about-image">
+        <img src="me.jpg" alt="Eden's photo" id="about-image" />
+    </div>
+    <div class="sectionContainer aboutContainer">
+        <h2>About Me</h2>
+        <div class="about-columns">
+            <div class="about-text">
+                <p>
+                    Hello! My name is Eden, and I am a software developer with a passion for creating beautiful and functional designs.<br><br>
+                    I am a graduate of The Tech Academy's Software Developer Boot Camp, 
+                    trained and experienced in HTML, CSS, JavaScript, SQL, and more.<br><br>
+                    I am a full-stack developer with a primary focus on UX/UI design and would love to work with you on your project!
+                </p>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+<section id="skills" class="section-light">
+    <div class="sectionContainer skillsContainer">
+        <!-- Experience Column -->
+        <div class="column">
+            <h2>Experience</h2>
+            <p>
+                I’ve designed and maintained a variety of web projects, including portfolios, 
+                landing pages, and business websites.<br><br>
+                My work blends user-centered design with clean, 
+                responsive styling to ensure both clarity and visual impact.<br><br>
+
+                <strong>Social Media Management:</strong><br>
+                Managed TikTok, Instagram, Facebook Groups, LinkedIn, YouTube, 
+                and Twitter accounts, tailoring content to each platform’s audience and trends.<br><br>
+                <strong>Content Creation & Design:</strong><br>
+                Wrote and edited video scripts, filmed and edited short-form content, 
+                and designed graphics for merch, infographics, and ads using tools like Canva, 
+                Photoshop, Lightroom, and Adobe XD.<br><br>
+                <strong>Community Moderation:</strong><br> 
+                Actively moderated online communities, 
+                responding to comments, enforcing guidelines, and fostering positive engagement across 
+                social platforms and private groups.<br><br>
+                <strong>Website Maintenance:</strong><br>
+                Updated and managed websites built on GoDaddy, WordPress, 
+                and Salesforce — making content updates, swapping images, and maintaining 
+                visual consistency.<br><br>
+                <strong>UX Research & Writing:</strong><br>
+                Conducted user interviews to improve 
+                B2B sales processes and wrote a white paper on workplace resilience.
+            </p>
+        </div>
+
+        <!-- Links Column -->
+        <div class="column linkColumn">
+            <h2>My Projects</h2>
+            <p>Explore my work or connect with me:</p>
+            <a href="https://github.com/edendior" target="_blank" class="btn">GitHub</a><br><br>
+            <a href="https://dribbble.com/edendior" target="_blank" class="btn">Dribbble</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-dark">
+        <div class="sectionContainer">
+            <h2>Contact Me</h2>
+            <div class="contactBox">
+                <p>
+                    Interested in working together or just want to say hi?
+                </p>
+                <a href="mailto:edendior1@gmail.com" class="btn">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
