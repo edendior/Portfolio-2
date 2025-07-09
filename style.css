@@ -184,7 +184,7 @@ nav a:hover {
 
 /***** SECTION STYLES *****/
 .section-dark {
-    background-color: #001f2f; /* Deep water theme */
+    background-color: #001f2fdd; /* Deep water theme */
     color: white;
     padding: 100px 40px;
     min-height: 100vh;
@@ -196,8 +196,9 @@ nav a:hover {
 }
 
 .section-light {
-    background-color: #f1fefc;
-    color: #001f2f;
+    background-color: rgba(0, 30, 10, 0.2);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: 100px 40px;
     min-height: 100vh;
     display: flex;
@@ -209,7 +210,8 @@ nav a:hover {
 
 .sectionContainer {
     max-width: 900px;
-    width: 90%;
+    width: 100%;
+    padding: 40px;
     margin: 0 auto;
 }
 
@@ -257,6 +259,12 @@ nav a:hover {
     justify-content: center;
     gap: 40px;
     align-items: flex-start;
+    margin-bottom: 150px;
+}
+.glassContainer {
+    background-color: rgba(0, 30, 10, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
 }
 
 .linkColumn {
@@ -283,19 +291,22 @@ nav a:hover {
     padding: 15px 20px;   
     font-size: 20px;      
     border-radius: 5px;    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    
 }
 
 /***** CONTACT BOX *****/
 .contactBox {
-    background: rgba(25, 188, 242, 0);
-    color: white;
+    background: rgba(208, 240, 251, 0.7);
+    color: rgb(0, 8, 35);
     padding: 40px;
     border-radius: 12px;
     max-width: 400px;
+    height: 200px;
     margin: 0 auto;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .btn {
@@ -306,7 +317,7 @@ nav a:hover {
     border-radius: 6px;
     text-decoration: none;
     margin-top: 15px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
