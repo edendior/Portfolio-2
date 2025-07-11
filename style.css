@@ -188,7 +188,7 @@ nav a:hover {
 
 /***** SECTION STYLES *****/
 .section-dark {
-    background-color: #001f2fdd; 
+    background-color: #001f2fdd; /* Deep water theme */
     color: white;
     padding: 100px 40px;
     min-height: 100vh;
