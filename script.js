@@ -22,4 +22,14 @@ tapOverlay.addEventListener('click', () => {
         tapOverlay.style.display = 'none';
     }, 2000);
 });
+//hamburger menu
+const nav = document.querySelector('nav');
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+
+hamburgerBtn.addEventListener('click', () => {
+  const isOpen = nav.classList.toggle('open');
+  hamburgerBtn.setAttribute('aria-expanded', isOpen);
+});
+
+
 
