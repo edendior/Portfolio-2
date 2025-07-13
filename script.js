@@ -22,13 +22,22 @@ tapOverlay.addEventListener('click', () => {
         tapOverlay.style.display = 'none';
     }, 2000);
 });
-//hamburger menu
+
+// hamburger menu
 const nav = document.querySelector('nav');
 const hamburgerBtn = document.getElementById('hamburgerBtn');
+const menuFields = nav.querySelectorAll('a'); // Assuming menu fields are <a> elements
 
 hamburgerBtn.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   hamburgerBtn.setAttribute('aria-expanded', isOpen);
+});
+
+menuFields.forEach(field => {
+  field.addEventListener('click', () => {
+    nav.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', false);
+  });
 });
 
 
