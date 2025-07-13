@@ -415,7 +415,7 @@ nav a:hover {
     nav {
       display: none;
       top: 175px;
-      left: 350px;
+      left: 80%;
       transform: translate(-50%, -50%);
       background: rgba(255, 255, 255, 0.2);
       padding: 20px;
@@ -441,7 +441,7 @@ nav a:hover {
     #hamburgerBtn {
       position: fixed;
       top: 50px;
-      right: 10%;
+      right: -10px;
       transform: translateX(-50%);
       z-index: 1000;
       display: flex;
@@ -449,7 +449,7 @@ nav a:hover {
       backdrop-filter: blur(6px);
       border: none;
       border-radius: 10px;
-      padding: 10px 20px;
+      padding: 10px 30px;
       font-size: 18px;
       font-weight: bold;
       color: white;
