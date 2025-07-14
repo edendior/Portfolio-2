@@ -57,6 +57,14 @@ window.addEventListener('resize', () => {
     nav.classList.remove('open');
   }
 });
+const closeBtn = document.getElementById('closeMenu');
+
+closeBtn.addEventListener('click', () => {
+  nav.classList.remove('open');
+  if (window.innerWidth <= 768) {
+    menuPrompt.style.display = 'block';
+  }
+});
 
 
 

@@ -436,7 +436,7 @@ nav a:hover {
         flex-direction: column;
         gap: 15px;
         position: fixed;
-        top: 90px;
+        top: 70px;
         left: 50%;
         transform: translateX(-50%);
         background-color: rgba(0, 30, 10, 0.5);
@@ -446,6 +446,10 @@ nav a:hover {
         width: auto;
         max-width: 80vw;
         box-sizing: border-box;
+      }
+      nav a {
+        font-size: 22px;
+        margin-top: 5px
       }
     
       nav.open {
@@ -465,7 +469,6 @@ nav a:hover {
       nav {
         display: flex !important; /* restore original nav layout on desktop */
         position: fixed;
-        top: 38%;
         left: calc(30px + .5in);
         transform: translateY(-50%);
         flex-direction: column;
@@ -473,6 +476,22 @@ nav a:hover {
     }
     @media screen and (min-width: 769px) {
       .slide-down-prompt {
+        display: none;
+        text-align: center;
+      }
+    }
+    #closeMenu {
+      background: transparent;
+      border: none;
+      font-size: 22px;
+      color:rgb(219, 255, 253);
+      cursor: pointer;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    @media screen and (min-width: 769px) {
+      #closeMenu {
         display: none;
       }
     }
