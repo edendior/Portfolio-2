@@ -23,21 +23,39 @@ tapOverlay.addEventListener('click', () => {
     }, 2000);
 });
 
-// hamburger menu
+// pull down menu
 const nav = document.querySelector('nav');
-const hamburgerBtn = document.getElementById('hamburgerBtn');
-const menuFields = nav.querySelectorAll('a'); // Assuming menu fields are <a> elements
+const menuPrompt = document.getElementById('menuPrompt');
+const navLinks = nav.querySelectorAll('a');
 
-hamburgerBtn.addEventListener('click', () => {
+menuPrompt.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
-  hamburgerBtn.setAttribute('aria-expanded', isOpen);
+  menuPrompt.style.display = isOpen ? 'none' : 'block';
 });
 
-menuFields.forEach(field => {
-  field.addEventListener('click', () => {
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
     nav.classList.remove('open');
-    hamburgerBtn.setAttribute('aria-expanded', false);
+
+    // Only show prompt again if we're on mobile
+    if (isMobile()) {
+      menuPrompt.style.display = 'block';
+    }
   });
+});
+window.addEventListener('resize', () => {
+  if (isMobile()) {
+    if (!nav.classList.contains('open')) {
+      menuPrompt.style.display = 'block';
+    }
+  } else {
+    menuPrompt.style.display = 'none';
+    nav.classList.remove('open');
+  }
 });
 
 
