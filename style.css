@@ -121,6 +121,9 @@ nav a:hover {
     position: relative;
 }
 
+a {
+  color: #6ec3ff; /* change to your desired color */
+}
 
 /***** "scroll down" *****/
 .scroll-down {
