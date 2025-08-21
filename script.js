@@ -23,7 +23,7 @@ tapOverlay.addEventListener('click', () => {
     }, 2000);
 });
 
-// pull down menu
+// tap for menu
 const nav = document.querySelector('nav');
 const menuPrompt = document.getElementById('menuPrompt');
 const navLinks = nav.querySelectorAll('a');
@@ -41,7 +41,7 @@ navLinks.forEach(link => {
   link.addEventListener('click', () => {
     nav.classList.remove('open');
 
-    // Only show prompt again if we're on mobile
+    // only show prompt on mobile
     if (isMobile()) {
       menuPrompt.style.display = 'block';
     }
